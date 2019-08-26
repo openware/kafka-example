@@ -25,7 +25,7 @@ func NewKafkaWriter(kafkaURL, topic string) *kafka.Writer {
 func main() {
 	flag.Parse()
 
-	writer := NewKafkaWriter(*uri, "benchmark-topic")
+	writer := NewKafkaWriter(*uri, "benchmark")
 	defer writer.Close()
 
 	for i := 0; i < int(*amount); i++ {

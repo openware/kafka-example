@@ -1,0 +1,5 @@
+version: '3.7'
+
+services:
+  kafkacat:
+    image: confluentinc/cp-kafkacat:5.2.3
